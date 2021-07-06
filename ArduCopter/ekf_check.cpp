@@ -165,7 +165,7 @@ void Copter::failsafe_ekf_event()
             }
             break;
 	case FS_EKF_ACTION_PLANCKLAND:
-	    set_mode(Mode::Number::PLANCKLAND, ModeReason::EKF_FAILSAFE);
+	    set_mode_planck_RTB_or_planck_land(ModeReason::EKF_FAILSAFE);
 	    break;
         case FS_EKF_ACTION_LAND:
         case FS_EKF_ACTION_LAND_EVEN_STABILIZE:
